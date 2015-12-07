@@ -1,0 +1,37 @@
+footer[role=contentinfo]{
+  font-size: 1rem;
+
+  .container{
+    @extend .container;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    overflow: hidden;
+  }
+}
+
+.sponsors{
+  background: $green;
+
+  h3{
+    float: left;
+    width: 20%;
+    margin: 0;
+  }
+
+  ul{
+    float: left;
+    width: 70%;
+    margin: 0;
+    margin-left: 10%;
+    padding: 0;
+  }
+}
+
+.library{
+  clear: both;
+  text-align: center;
+
+  svg{
+    width: 5rem;
+  }
+}

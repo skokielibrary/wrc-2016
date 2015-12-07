@@ -1,0 +1,109 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 20px/1.4 'Avenir 85 Heavy', sans-serif; }
+
+h1, h2, h3 {
+  font-family: 'Avenir 95 Black', sans-serif;
+  text-transform: uppercase; }
+
+a {
+  color: #74bd74; }
+
+.container, header[role=banner], main[role=main], footer[role=contentinfo] .container {
+  clear: both;
+  max-width: 1024px;
+  margin: auto;
+  padding: 2rem 1rem; }
+
+.button {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border: 3px solid #000;
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase; }
+
+header[role=banner] {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  header[role=banner] .button {
+    float: right; }
+
+.brand {
+  display: inline-block;
+  font-family: 'Avenir 95 Black';
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000; }
+  .brand small {
+    display: block;
+    font-family: 'Avenir 35 Light';
+    font-size: .875rem; }
+
+main[role=main] section {
+  display: table;
+  padding: 4rem 8rem 4rem 4rem; }
+
+main[role=main] section h1 {
+  display: table-cell;
+  width: 30%;
+  margin: 0;
+  margin-right: 4rem;
+  font-size: 3rem;
+  line-height: 1.1; }
+  main[role=main] section h1 span {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 1rem; }
+    main[role=main] section h1 span:nth-of-type(1n) {
+      border-bottom: 4px solid #E2E199; }
+    main[role=main] section h1 span:nth-of-type(2n) {
+      border-bottom: 4px solid #FDCA94; }
+    main[role=main] section h1 span:nth-of-type(3n) {
+      border-bottom: 5px solid #9FB4B5; }
+    main[role=main] section h1 span:nth-of-type(4n) {
+      border-bottom: 6px solid #B9DEB9; }
+
+main[role=main] section h2 {
+  position: relative;
+  top: .5rem;
+  display: table-cell;
+  width: 20%;
+  margin: 0; }
+
+main[role=main] section .label {
+  display: table-cell;
+  width: 60%; }
+  main[role=main] section .label p {
+    margin-top: 0; }
+
+footer[role=contentinfo] {
+  font-size: 1rem; }
+  footer[role=contentinfo] header[role=banner], footer[role=contentinfo] main[role=main], footer[role=contentinfo] .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    overflow: hidden; }
+
+.sponsors {
+  background: #B9DEB9; }
+  .sponsors h3 {
+    float: left;
+    width: 20%;
+    margin: 0; }
+  .sponsors ul {
+    float: left;
+    width: 70%;
+    margin: 0;
+    margin-left: 10%;
+    padding: 0; }
+
+.library {
+  clear: both;
+  text-align: center; }
+  .library svg {
+    width: 5rem; }

@@ -1,0 +1,23 @@
+header[role=banner]{
+  @extend .container;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .button{
+    float: right;
+  }
+}
+
+.brand{
+  display: inline-block;
+  font-family: 'Avenir 95 Black';
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $black;
+
+  small{
+    display: block;
+    font-family: 'Avenir 35 Light';
+    font-size: .875rem;
+  }
+}

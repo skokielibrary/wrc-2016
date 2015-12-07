@@ -1,0 +1,35 @@
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font: 20px/1.4 'Avenir 85 Heavy', sans-serif;
+}
+
+h1, h2, h3{
+  font-family: 'Avenir 95 Black', sans-serif;
+  text-transform: uppercase;
+}
+
+a{
+  color: darken($green, 20%);
+}
+
+.container{
+  clear: both;
+  max-width: #{$max-width};
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.button{
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border: 3px solid $black;
+  color: $black;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
