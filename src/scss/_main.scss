@@ -1,5 +1,6 @@
 main[role=main]{
   @extend .container;
+  padding-bottom: 0;
 
   section{
     display: table;
@@ -55,4 +56,20 @@ main[role=main]{
     }
   }
 
+}
+
+.intro{
+  background: url('../img/intro.png') no-repeat center left;
+}
+
+.signup{
+  background: url('../img/signup.png') no-repeat top right;
+}
+
+.levelup{
+  background: url('../img/levelup.png') no-repeat top right;
+}
+
+.prizes{
+  background: url('../img/prizes.png') no-repeat top center;
 }

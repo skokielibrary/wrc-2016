@@ -2,6 +2,7 @@ header[role=banner]{
   @extend .container;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  background: url('../img/header.png') no-repeat top right;
 
   .button{
     float: right;
@@ -18,6 +19,6 @@ header[role=banner]{
   small{
     display: block;
     font-family: 'Avenir 35 Light';
-    font-size: .875rem;
+    font-size: 1.125rem;
   }
 }
