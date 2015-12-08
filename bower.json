@@ -1,0 +1,23 @@
+{
+  "name": "wrc-2016",
+  "description": "Landing page for WRC 2016.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Skokie Public Library"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "wow": "wowjs#~1.1.2",
+    "animate.css": "~3.4.0"
+  }
+}

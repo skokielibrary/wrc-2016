@@ -3,17 +3,33 @@ main[role=main]{
   padding-bottom: 0;
 
   section{
-    display: table;
-    padding: 4rem 8rem 4rem 4rem;
+    padding: 2rem 1rem;
+
+    &:first-of-type{
+      padding-top: 0;
+
+      @media screen and (min-width: #{$break-point}){
+        padding-top: 4rem;
+      }
+    }
+
+    @media screen and (min-width: #{$break-point}){
+      display: table;
+      padding: 4rem 10rem 4rem 4rem;
+    }
   }
 
   section h1{
-    display: table-cell;
-    width: 30%;
-    margin: 0;
-    margin-right: 4rem;
+    margin-top: 0;
     font-size: 3rem;
     line-height: 1.1;
+
+    @media screen and (min-width: #{$break-point}){
+      display: table-cell;
+      width: 30%;
+      margin: 0;
+      margin-right: 4rem;
+    }
 
     span{
       display: inline-block;
@@ -39,17 +55,23 @@ main[role=main]{
   }
 
   section h2{
-    position: relative;
-    top: .5rem;
-    display: table-cell;
-    width: 20%;
-    margin: 0;
-    //-webkit-transform: rotate(-90deg);
+
+    @media screen and (min-width: #{$break-point}){
+      position: relative;
+      top: .5rem;
+      display: table-cell;
+      width: 20%;
+      margin: 0;
+    }
+
   }
 
   section .label{
-    display: table-cell;
-    width: 60%;
+
+    @media screen and (min-width: #{$break-point}){
+      display: table-cell;
+      width: 60%;
+    }
 
     p{
       margin-top: 0;
@@ -59,17 +81,36 @@ main[role=main]{
 }
 
 .intro{
-  background: url('../img/intro.png') no-repeat center left;
+  background: url('../img/intro.png') no-repeat center center;
+
+  @media screen and (min-width: #{$break-point}){
+    background-position: center left;
+    padding-right: 4rem !important;
+  }
 }
 
 .signup{
-  background: url('../img/signup.png') no-repeat top right;
+  background: url('../img/signup.png') no-repeat center center;
+
+  @media screen and (min-width: #{$break-point}){
+    background-position: top right;
+  }
 }
 
 .levelup{
-  background: url('../img/levelup.png') no-repeat top right;
+  background: url('../img/levelup.png') no-repeat center center;
+
+  @media screen and (min-width: #{$break-point}){
+    background-position: top right;
+  }
+
 }
 
 .prizes{
-  background: url('../img/prizes.png') no-repeat top center;
+  background: url('../img/prizes.png') no-repeat top left;
+
+  @media screen and (min-width: #{$break-point}){
+    background-position: top center;
+  }
+
 }

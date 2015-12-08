@@ -3,9 +3,9 @@ footer[role=contentinfo]{
 
   .container{
     @extend .container;
+    overflow: hidden;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    overflow: hidden;
   }
 }
 
@@ -13,17 +13,30 @@ footer[role=contentinfo]{
   background: $green;
 
   h3{
-    float: left;
-    width: 20%;
-    margin: 0;
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+
+    @media screen and (min-width: #{$break-point}){
+      float: left;
+      width: 15%;
+      margin: 0;
+    }
   }
 
   ul{
-    float: left;
-    width: 70%;
+    list-style: none;
     margin: 0;
-    margin-left: 10%;
     padding: 0;
+
+    @media screen and (min-width: #{$break-point}){
+      float: left;
+      width: 80%;
+      margin: 0 0 0 5%;
+    }
+
+    li{
+      margin-bottom: .65rem;
+    }
   }
 }
 
@@ -33,5 +46,6 @@ footer[role=contentinfo]{
 
   svg{
     width: 5rem;
+    fill: $peach;
   }
 }

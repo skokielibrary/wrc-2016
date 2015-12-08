@@ -5,16 +5,18 @@
 body{
   margin: 0;
   padding: 0;
-  font: 20px/1.4 'Avenir 85 Heavy', sans-serif;
+  font: 700 20px/1.4 $base-font-family;
 }
 
 h1, h2, h3{
-  font-family: 'Avenir 95 Black', sans-serif;
+  font-family: $base-font-family;
   text-transform: uppercase;
+  font-weight: 900;
 }
 
 a{
-  color: darken($green, 20%);
+  color: $gray;
+  text-decoration: none;
   transition: .2s ease opacity;
 }
 
@@ -37,4 +39,9 @@ a:hover{
   text-decoration: none;
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+.info{
+  font-size: .95rem;
+  font-style: italic;
 }

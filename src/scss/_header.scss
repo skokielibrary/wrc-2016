@@ -5,20 +5,27 @@ header[role=banner]{
   background: url('../img/header.png') no-repeat top right;
 
   .button{
-    float: right;
+    visibility: hidden;
+
+    @media screen and (min-width: #{$break-point}){
+      visibility: visible;
+      float: right;
+    }
+
   }
 }
 
 .brand{
   display: inline-block;
-  font-family: 'Avenir 95 Black';
+  font-family: $base-font-family;
   text-transform: uppercase;
   text-decoration: none;
   color: $black;
 
   small{
     display: block;
-    font-family: 'Avenir 35 Light';
+    font-family: $base-font-family;
     font-size: 1.125rem;
+    font-weight: 300;
   }
 }
