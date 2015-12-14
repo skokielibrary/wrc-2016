@@ -11,16 +11,17 @@ footer[role=contentinfo]{
 
 .sponsors{
   background: $green;
+  text-align: center;
 
   h3{
     margin: 0 0 1rem 0;
     font-size: 1.5rem;
 
-    @media screen and (min-width: #{$break-point}){
+    /*@media screen and (min-width: #{$break-point}){
       float: left;
       width: 15%;
       margin: 0;
-    }
+    }*/
   }
 
   ul{

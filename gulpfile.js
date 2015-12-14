@@ -25,13 +25,13 @@ gulp.task('sass', function() {
 gulp.task('css', ['sass'], function(){
     return gulp.src(['bower_components/animate.css/animate.min.css', 'src/css/styles.css'])
       .pipe(concat('styles.css'))
-      .pipe(gulp.dest("dist/css"))
+      .pipe(gulp.dest("dist/custom/assets/css"))
       .pipe(browserSync.stream());
 });
 
 gulp.task('js', function(){
   return gulp.src("bower_components/wow/dist/wow.min.js")
-    .pipe(gulp.dest("dist/js"))
+    .pipe(gulp.dest("dist/custom/assets/js"))
     .pipe(browserSync.stream());
 })
 
