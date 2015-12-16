@@ -15,7 +15,7 @@ h1, h2, h3{
 }
 
 a{
-  color: $gray;
+  color: darken($gray, 20%);
   text-decoration: none;
   transition: .2s ease opacity;
 }
